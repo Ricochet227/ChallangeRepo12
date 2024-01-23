@@ -4,14 +4,17 @@ const cTable = require('console.table');
 
 const connection = mysql.createConnection({
     host: 'localhost',
-    port: 1049,
+    port: 3309,
     user: 'root',
     password: '@lreadyDead227',
     database: 'company_db',
 });
 
 connection.connect(err => {
-    if (err) throw err;
+    if (err) {
+        console.error('Error connecting to MySQL:', err.message);
+        throw err;
+    }
     console.log("Welcome To Ricochets Employee Tracker!");
     startMenu();
 });
@@ -280,4 +283,5 @@ const viewAllDepartments = () => {
             });
           });
         });
-      };
+};
+      
