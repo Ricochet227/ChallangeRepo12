@@ -20,7 +20,7 @@ VALUES ("Branch Manger", 70000, 1),
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ("Michael", "Scott", 1, 1),
         ("Jim", "Halpert", 3, NULL),
-        ("Dwight", "Schrute", 2, 2),
+        ("Dwight", "Schrute", 2, NULL),
         ("Stanley", "Hudson", 3, NULL),
         ("Phyllis", "Vance", 3, NULL),
         ("Oscar", "Martinez", 4, NULL),

@@ -29,9 +29,6 @@ const startMenu = () => {
             'Add a role',
             'Add an employee',
             'Update an employee role',
-            'Delete a department',
-            'Delete a role',
-            'Delete an employee',
             'Exit',
         ],
     })
@@ -51,12 +48,6 @@ const startMenu = () => {
             addEmployee();
         } else if (response.menu === 'Update an employee role') {
             updateEmployeeRole();
-        } else if (response.menu === 'Delete a department') {
-          deleteDepartment();
-        } else if (response.menu === 'Delete a role') {
-          deleteRole();
-        } else if (response.menu === 'Delete an employee') {
-          deleteEmployee();
         } else {
             connection.end();
         }
